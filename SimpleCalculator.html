@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Calculator</title>
+		<style>
+			*{
+				font-size:20px;
+			}
+			.btn,.btn_opn,.btn_clr{
+				height:60px;
+				width:60px;
+				border:0px;
+				margin:0px;
+			}
+			.io{
+				height:40px;
+				width:100%;
+				margin:20px 0px 10px 0px;
+				border-radius:5px;
+			}
+			.btn_clr{
+				background-color:#ff6600;
+			}
+			.btn_opn{
+				background-color:#ffcc00;
+			}
+			.btn_opn:hover{
+				background-color:#33cc33;
+				border:1px solid #a9a9a9;
+			}
+			.btn:hover{
+				background-color:#0099ff;
+				border:1px solid #a9a9a9;
+			}
+			.btn_clr:hover{
+				background-color:red;
+				border:1px solid #a9a9a9;
+			}
+		</style>
+	</head>
+	<body><center>
+		<form name="cal" onsubmit="cal.io.value = eval(cal.io.value)">
+			<table>
+				<tbody>
+					<tr>
+						<td colspan="4"><input type="text" name="io" class="io" placeholder="Simple Calculator" readonly=""></td>
+					</tr>
+					<tr>
+						<td><input class="btn" type="button" value="7" onclick="cal.io.value += &#39;7&#39;"></td>
+						<td><input class="btn" type="button" value="8" onclick="cal.io.value += &#39;8&#39;"></td>
+						<td><input class="btn" type="button" value="9" onclick="cal.io.value += &#39;9&#39;"></td>
+						<td><input class="btn_opn" type="button" value="+" onclick="cal.io.value += &#39; + &#39;"></td>
+					</tr>
+					<tr>
+						<td><input class="btn" type="button" value="4" onclick="cal.io.value += &#39;4&#39;"></td>
+						<td><input class="btn" type="button" value="5" onclick="cal.io.value += &#39;5&#39;"></td>
+						<td><input class="btn" type="button" value="6" onclick="cal.io.value += &#39;6&#39;"></td>
+						<td><input class="btn_opn" type="button" value="-" onclick="cal.io.value += &#39; - &#39;"></td>
+					</tr>
+					<tr>
+						<td><input class="btn" type="button" value="1" onclick="cal.io.value += &#39;1&#39;"></td>
+						<td><input class="btn" type="button" value="2" onclick="cal.io.value += &#39;2&#39;"></td>
+						<td><input class="btn" type="button" value="3" onclick="cal.io.value += &#39;3&#39;"></td>
+						<td><input class="btn_opn" type="button" value="x" onclick="cal.io.value += &#39; * &#39;"></td>
+					</tr>
+					<tr>
+						<td><input class="btn_clr" type="button" value="C" onclick="cal.io.value = &#39;&#39;"></td>
+						<td><input class="btn" type="button" value="0" onclick="cal.io.value += &#39;0&#39;"></td>
+						<td><input class="btn_opn" type="button" value="=" onclick="cal.io.value = eval(cal.io.value)"></td>
+						<td><input class="btn_opn" type="button" value="/" onclick="cal.io.value += &#39; / &#39;"></td>
+					</tr>
+				</tbody>
+			</table>
+		</form></center>
+	</body>
+</html>
