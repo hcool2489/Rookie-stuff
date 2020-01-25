@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Sign-Up</title>
+		<style>
+			.alr{
+				color:green;
+				padding-left:30px;
+			}
+		</style>
+	</head>
+	<body>
+		<form name="signup" onsubmit="pwd_val()">
+			<table>
+				<tbody><tr>
+					<td>First Name: </td>
+					<td><input type="text" required="" placeholder="John" title="First Name"></td>
+				</tr>
+				<tr>
+					<td>Surname: </td>
+					<td><input type="text" required="" placeholder="Smith" title="Last Name"></td>
+				</tr>
+				<tr>
+					<td>E-Mail: </td>
+					<td><input type="email" required="" placeholder="user@host.com" title="Electronic Mail id"></td>
+				</tr>
+				<tr>
+					<td>Mobile Number: </td>
+					<td><input type="text" value="+91" pattern="[+][0-9]{1,3}" title="Country code preceding with &#39;+&#39; sign" maxlength="4" size="1"> <input type="text" pattern="[0-9]{6,12}" required="" placeholder="Mobile Number" maxlength="15" title="Basic Contact Needed" size="14"></td>
+					<td class="alr">Mobile number with country code</td>
+				</tr>
+				<tr>
+					<td>Date of Birth: </td>
+					<td><input type="date" max="2000-12-10" required="" title="We&#39;ll use this to send you b&#39;day wishes"></td>
+					<td class="alr">Must born before 10<sup>th</sup> December, 2000</td>
+				</tr>
+				<tr>
+					<td>Gender: </td>
+					<td>
+						<input type="radio" name="gender" value="m" checked="">Male
+						<input type="radio" name="gender" value="f">Female
+					</td>
+				</tr>
+				<tr>
+					<td>Social: </td>
+					<td>
+						<input type="checkbox" value="facebook" name="s1">Facebook<br>
+						<input type="checkbox" value="twitter" name="s2">Twitter<br>
+						<input type="checkbox" value="snapchat" name="s3">Snapchat
+					</td>
+					<td>
+						<input type="checkbox" value="instagram" name="s4">Instagram<br>
+						<input type="checkbox" value="google_plus" name="s5">Google Plus<br>
+						<input type="checkbox" value="linkedin" name="s6">Linked-In
+					</td>
+				</tr>
+				<tr>
+					<td>Password: </td>
+					<td>
+						<input type="password" name="pwd" required="">
+					</td>
+				</tr>
+				<tr>
+					<td>Confirm Password: </td>
+					<td>
+						<input type="password" name="cpwd" required="">
+					</td>
+				</tr>
+				<tr>
+					<td>Rating: </td>
+					<td><sup>1</sup> <input type="range" min="1" max="5" value="4" required="" title="Drag Me..."> <sup>5</sup></td>
+					<td class="alr">Rate this form from 1 - Bad to 5 - Excellent</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit"></td>
+					<td><input type="reset"></td>
+				</tr>
+			</tbody></table>
+		</form>
+		<script>
+			function pwd_val()
+			{
+				var x = document.signup.pwd.value;
+				var y = document.signup.cpwd.value;
+				if(x==y)
+					document.write("Validations Successful... !!");
+				else
+					alert("Passwords are not Same !!!");
+			}
+		</script>
+	</body>
+</html>
