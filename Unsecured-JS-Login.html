@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Login</title>
+		<style>
+			form{
+				background-color:#75c4d8;
+				border-radius:20px;
+				padding:20px;
+				width:250px;
+			}
+			input{
+				width:180px;
+			}
+			input[type="button"]{
+				width:80px;
+			}
+			#op{
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<table>
+				<tbody><tr>
+					<td>User: </td><td><input type="text" id="user" placeholder="Web"></td>
+				</tr>
+				<tr>
+					<td>Pass: </td><td><input type="password" id="pswd" placeholder="Technology"></td>
+				</tr>
+				<tr>
+					<td></td><td><input type="button" value="Login" onclick="sub()"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><span id="op"></span></td>
+				</tr>
+			</tbody></table>
+		</form>
+		<script>
+			function sub()
+			{
+				var u=document.getElementById("user").value;
+				var p=document.getElementById("pswd").value;
+				if((u=="Web")&&(p=="Technology"))
+				{
+					document.getElementById("op").innerHTML="";
+					alert("Welcome\nUser: "+u);
+				}
+				else
+					document.getElementById("op").innerHTML="Wrong Username or Password !!!";
+			}
+		</script>
+	</body>
+</html>
