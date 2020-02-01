@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Hello, world!</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" href="css/bootstrap.min.css"><!-- 3.3.4 -->
+		<style>
+			mark{
+				background-color:yellow;
+				color:green;
+			}
+			#t1 td:hover{
+				background-color:#00FF99;
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+					<a href="index.html" class="navbar-brand">
+						LoGo 0F Web
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="mainnav">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">About Us</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Drop It! <span class="caret"></span></a>
+							<ul class="nav navbar-nav navbar-inverse dropdown-menu">
+								<li><a href="#">option 1</a></li>
+								<li><a href="#">option 2</a></li>
+								<li><a href="#">option 3</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Logout</a></li>
+						<li><img src="3105.gif" width="30" class="img-circle" style="margin-right:35px; margin-top:10px; margin-left:15px;"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+		
+			<h1>Hello</h1>
+			<p>This will be paragraph....</p>
+			<div class="row">
+				<div class ="col-md-4 col-sm-4" style="background-color:#FF9900">Left</div>
+				<div class ="col-md-4 col-sm-4" style="background-color:#0099FF">Middle</div>
+				<div class ="col-md-4 col-sm-4" style="background-color:#00FF99">Right</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class ="col-md-2 col-xs-6">
+					<p>Hello this must be <mark>marked</mark>.... check it out</p>
+				</div>
+				<div class ="col-md-2 col-xs-6">
+					<blockquote>
+						<p>Some Great said words</p>
+						<footer>Said by ...</footer>
+					</blockquote>
+				</div>
+				<div class ="col-md-2 col-xs-6">
+					<h4>Something in h4</h4>
+				</div>
+				<div class ="col-md-2 col-xs-6">
+					<dl>
+						<dt>Hello</dt>
+							<dd>- check1</dd>
+							<dd>- check2</dd>
+							<dd>- check3</dd>
+					</dl>
+				</div>
+				<div class ="col-md-4">
+					<p>Here's some code <code>somefunction(&a);</code> cool !</p>
+					<h5>Some multiline code</h5>
+					<pre>
+include math as mt
+print(mt.pi)
+for i in range(10)
+	if(i % 2 == 0)
+		print(i)</pre>
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-md-2 col-xs-6">
+					<h6>Here's some keyboard shortcut</h6>
+					<p><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd></p>
+				</div>
+				<div class="col-md-1 col-xs-6">
+					<p class="text-muted">Muted</p>
+					<p class="text-success">Success</p>
+					<p class="text-danger">Danger</p>
+					<p class="bg-muted">Muted</p>
+					<p class="bg-success">Success</p>
+					<p class="bg-danger">Danger</p>
+				</div>
+				<div class="col-md-3">
+					<table id="t1" class="table table-striped table-condensed">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Age</th>
+								<th>Points</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Abc</td>
+								<td>25</td>
+								<td>283</td>
+							</tr>
+							<tr>
+								<td>qwerty</td>
+								<td>5</td>
+								<td>1283</td>
+							</tr>
+							<tr>
+								<td>Xyz</td>
+								<td>22</td>
+								<td>203</td>
+							</tr>
+							<tr>
+								<td>asdf</td>
+								<td>59</td>
+								<td>683</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-2 col-sm-4">
+					<img src="3105.gif" width="180" class="img-rounded">
+				</div>
+				<div class="col-md-2 col-sm-4">
+					<img src="3105.gif" width="180" class="img-circle">
+				</div>
+				<div class="col-md-2 col-sm-4">
+					<img src="3105.gif" width="180" class="img-thumbnail">
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<img src="GOTM.jpg" class="img-responsive">
+				</div>
+				<div class="col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+						<!--<iframe class="embed-responsive-item" src="http://youtube.com/embed/6Cf7IL_eZ38"></iframe>-->
+					</div>
+				</div>
+			</div>
+			</br>
+			<button>Button</button>
+			<button class="btn">btn</button>
+			<button class="btn btn-default btn-lg">lg Default</button>
+			<button class="btn btn-primary btn-xs">xs Primary</button>
+			<button class="btn btn-warning btn-sm">sm Warning</button>
+			<button class="btn btn-success btn-md">md Success</button>
+			<button class="btn btn-info">Info</button>
+			<button class="btn btn-link">Link</button>
+			<button class="btn btn-default active">Default Active</button>
+			<button class="btn btn-danger">Danger</button>
+			</br>
+			<h3>Wells are sections with borders and grey background</h3>
+			<div class="well">
+				Hello this is a well...
+			</div>
+			<div class="well well-sm">
+				well as well-sm
+			</div>
+			<div class="alert alert-success">
+				Success
+			</div>
+			<div class="alert alert-info">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				Info
+			</div>
+			<div class="alert alert-danger">
+				Danger
+			</div>
+			<div class="alert alert-warning">
+				Warning
+			</div>
+			<div class="alert alert-danger fade in">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				Are you sure you want to delete your account?
+        </div>
+		</div>
+
+		<script src="js/jquery-3.2.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+	</body>
+</html>
